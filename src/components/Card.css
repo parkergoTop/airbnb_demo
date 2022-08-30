@@ -1,0 +1,31 @@
+.data-driven-card{
+    width: 175px;
+    font-size: 12px;
+    padding-left:37px ;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
+}
+
+.card-photo{
+    width: 176px;
+    height:235px;
+    border: 9px;
+}
+
+.card-status{
+    display: flex;
+    align-items: center;
+}
+
+.red-star{
+    height: 14px;
+}
+
+.gray{
+    color: gray;
+}
+
+.bold{
+font-weight: bold;
+}

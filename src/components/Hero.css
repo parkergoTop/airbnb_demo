@@ -1,0 +1,23 @@
+.hero-display{
+    width: 396px;
+    height: 232px;
+    padding-left: 77px;
+    padding-top: 26px;
+    max-width: 400px;
+}
+
+.hero-title{
+    font-size: 36px;
+    font-weight: 600;
+    padding-left: 36px;
+    margin-bottom: 0;
+    align-self: center;
+ }
+
+
+.hero-info{
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 36px;
+}
