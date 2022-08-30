@@ -5,7 +5,7 @@ import heroDisplay from "/src/image/hero-display.png"
 
 
 export default function Hero(){
-    console.log(heroDisplay);
+   
     return(
         <section className="hero">
         <div className="images-display "></div>

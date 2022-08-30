@@ -21,7 +21,9 @@ export default function App(){
                 commentNumber = {card.stats.reviewCount}
                 nationality ={card.location}
                 activityTitle = {card.title}
+                location = {card.location}
                 price = {card.price}
+                openSpots = {card.openSpots}
                  />
     })
     return(

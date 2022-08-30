@@ -3,12 +3,23 @@ import "./Card.css"
 
 import redStar from "/src/image/red-star.png"
 
+/*
+    Challenge:
+    1. Display the correct text in the badge based on the logic above
+    2. Only display the badge if badgeText has a value
+    */
 export default function Card(props){
+   let badgeText;
+   if (props.openSpots ===0){
+      badgeText ="SOLD OUT";
+   }else if(props.location === "Online"){
+      badgeText = "Online"
+   }
+
    return (
-
-      <section className="data-driven-card">
-         <div className="data-driven-card-component" >
-
+       // why use ===
+         <div className="data-driven-card" >
+            {badgeText && <div className="sold-out">{badgeText}</div>}
             <img className="card-photo" src={props.img}/>
 
             <div className="card-status">
@@ -24,7 +35,7 @@ export default function Card(props){
 
 
          </div>
-      </section>
+      
 
       /*
     <section className="data-driven-card">
