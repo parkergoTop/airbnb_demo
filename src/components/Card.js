@@ -10,28 +10,30 @@ import redStar from "/src/image/red-star.png"
     */
 export default function Card(props){
    let badgeText;
-   if (props.openSpots ===0){
+   if (props.card.openSpots ===0){
       badgeText ="SOLD OUT";
-   }else if(props.location === "Online"){
+   }else if(props.card.location === "Online"){
       badgeText = "Online"
    }
+
+   const photo = Object.values(props.card.coverImg);
 
    return (
        // why use ===
          <div className="data-driven-card" >
             {badgeText && <div className="sold-out">{badgeText}</div>}
-            <img className="card-photo" src={props.img}/>
+            <img className="card-photo" src={photo}/>
 
             <div className="card-status">
                <img className="red-star" src = {redStar}/>
 
-               <span>{props.rating}</span>
-               <span className="gray"> ({props.commentNumber})</span>
-               <span className="gray">{props.nationality}</span>
+               <span>{props.card.stats.rating}</span>
+               <span className="gray"> ({props.card.stats.reviewCount})</span>
+               <span className="gray">{props.card.location}</span>
             </div>
 
-            <p className="activity-name">{props.activityTitle} </p>
-            <p className= "price"><span className="bold">From ${props.price}</span>/ person</p>
+            <p className="activity-name">{props.card.title} </p>
+            <p className= "price"><span className="bold">From ${props.card.price}</span>/ person</p>
 
 
          </div>

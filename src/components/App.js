@@ -17,13 +17,7 @@ export default function App(){
         return <Card 
                 key = {card.id}
                 img ={photo}
-                rating = {card.stats.rating}
-                commentNumber = {card.stats.reviewCount}
-                nationality ={card.location}
-                activityTitle = {card.title}
-                location = {card.location}
-                price = {card.price}
-                openSpots = {card.openSpots}
+                card = {card}
                  />
     })
     return(
@@ -31,7 +25,7 @@ export default function App(){
         <NavBar/>
         <Hero/>
         <div className="cards">
-        {cards}
+              {cards}
         </div>
        </div>
     )
